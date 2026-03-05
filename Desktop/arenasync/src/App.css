@@ -1,9 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* #root { */
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+/* } */
 
 .logo {
   height: 6em;
@@ -39,4 +39,57 @@
 
 .read-the-docs {
   color: #888;
+}
+/* .head{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 400px;
+} */
+
+.images img {
+  width: 30px; /* size dyal image */
+  height: 30px;
+}
+
+
+  header {
+  display: flex;
+  flex-direction: column; /* khalli l enfants fl line wa7da */
+  justify-content: space-around; /* espace bin l title w l image */
+  /* align-items: center;  */
+  /* ymidli l contenu vertically */
+  padding: 10px;; /* espace men l jnab */
+  /* background: red; */
+  /* width: 400px; */
+  height: 200px;
+  padding-top: 20px;
+background-color: rgb(64, 48, 231);
+background:linear-gradient(to bottom, rgb(64, 48, 231) ,white);
+
+
+
+}
+
+.titre h1 {
+   /* bach ma ykounch extra space */
+  font-size:5px;
+}
+.diiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.search{
+  display: flex;
+  justify-content: center;
+ 
+ 
+
+}
+.input{
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
 }

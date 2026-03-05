@@ -1,4 +1,4 @@
-function StatusBadge(statusText) {
+export function StatusBadge(statusText) {
     const badge = document.createElement("p");
     badge.textContent = statusText; 
 
