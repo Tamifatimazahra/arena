@@ -8,6 +8,7 @@ export function TournamentCard(props) {
     return (
         <div className="card">
             <h2 id="title">{props.data.title}</h2>
+             <p id="des"> {props.data.description}</p>
             <StatusBadge status={props.data.status} />
             <p> {props.data.sport}</p>
             <p>{props.data.date}</p>

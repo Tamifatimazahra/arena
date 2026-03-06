@@ -125,5 +125,8 @@ background:linear-gradient(to bottom, rgb(64, 48, 231) ,white);
   background-color: #fff;  
   box-shadow: none;         /* shadow makibanch */
 }
-
+#des{
+  display: flex;
+  font-size: small;
+}
 
