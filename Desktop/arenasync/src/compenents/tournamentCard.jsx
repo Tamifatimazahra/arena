@@ -7,11 +7,11 @@ export function TournamentCard(props) {
 
     return (
         <div className="card">
-            <h2>{props.data.title}</h2>
+            <h2 id="title">{props.data.title}</h2>
+            <StatusBadge status={props.data.status} />
             <p> {props.data.sport}</p>
             <p>{props.data.date}</p>
             <p> {props.data.location}</p>
-            <StatusBadge status={props.data.status} />
 
         </div>
     );
