@@ -3,7 +3,7 @@ import React from "react";
 import './App.css'
 import  Header from "./Header";
 import Search  from "./search";
-import { StatusBadge } from "./compenents/statusBadge.js";
+import { StatusBadge } from "./compenents/statusBadge.jsx";
 import  {TournamentCard,Container}  from "./compenents/tournamentCard.jsx";
 import { tournamentData } from "./Data/tournamentDB.js";
 

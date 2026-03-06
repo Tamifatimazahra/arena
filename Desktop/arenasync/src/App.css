@@ -93,3 +93,8 @@ background:linear-gradient(to bottom, rgb(64, 48, 231) ,white);
   width: 300px;
   border-radius: 10px;
 }
+#badge{
+  width: 100px;
+  color: white;
+
+}

@@ -1,4 +1,5 @@
 
+import { StatusBadge } from "./statusBadge";
 export function TournamentCard(props) {
     // const card =document.createElement("div");
     // card.classList.add("tournament-card");
@@ -10,14 +11,16 @@ export function TournamentCard(props) {
             <p> {props.data.sport}</p>
             <p>{props.data.date}</p>
             <p> {props.data.location}</p>
+            <StatusBadge status={props.data.status} />
+
         </div>
     );
 }
-export function Container(props){
-    return(
-    <div className="container">
-        {props.data.map((tournament) =>(<TournamentCard data={tournament}/>
-        ))}
-    </div>
+export function Container(props) {
+    return (
+        <div className="container">
+            {props.data.map((tournament) => (<TournamentCard data={tournament} />
+            ))}
+        </div>
     );
 }
