@@ -7,17 +7,24 @@ function RegistrationForm() {
     const isNomValid = nom.length >= 3;
     return (
         <form >
-            <input type="text" 
-            value={nom} 
-            onChange={(e) => setNom(e.target.value)}
-             placeholder="Nom" />
+            <input type="text"
+                value={nom}
+                onChange={(e) => setNom(e.target.value)}
+                placeholder="Nom" />
 
-             <input type="text" 
-             value={equipe}
-             onChange={(e)=>setEquipe(e.target.value)}
-             placeholder="Equipe" />
+            <input type="text"
+                value={equipe}
+                onChange={(e) => setEquipe(e.target.value)}
+                placeholder="Equipe" />
 
+            <input type="text"
+                value={equipe}
+                onChange={(e) => setNiveau(e.target.value)}
+                placeholder="Niveau" />
 
+            <button type="submit" disabled={!isNomValid}>
+                Valider
+            </button>
 
 
 
@@ -28,3 +35,4 @@ function RegistrationForm() {
     )
 
 }
+    export default RegistrationForm;
