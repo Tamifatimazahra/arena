@@ -1,9 +1,11 @@
 
 import { StatusBadge } from "./statusBadge";
+import { useState } from "react";
+
 export function TournamentCard(props) {
     // const card =document.createElement("div");
     // card.classList.add("tournament-card");
-
+            const [isRegistered,setisRegistered]=useState(false)
 
     return (
         <div className="card">
@@ -13,8 +15,13 @@ export function TournamentCard(props) {
             <p> {props.data.sport}</p>
             <p>{props.data.date}</p>
             <p> {props.data.location}</p>
-
+<button onClick={()=> setisRegistered(!isRegistered)} style={{
+    backgroundColor: isRegistered ? "red" : "green"}}   >{isRegistered?  "Se désinscrire" :"S'inscrire"}
+</button>
         </div>
+
+
+
     );
 }
 export function Container(props) {

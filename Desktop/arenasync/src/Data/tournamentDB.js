@@ -3,6 +3,7 @@
 export const tournamentData = [
   {
     id: "t1",
+    imguser:"./photo/profil.png",
     title: "Shuttle Masters League",
     sport: "Badminton",
     status: "On Going", // UtilisÃ© pour la couleur du StatusBadge (ex: success/green)

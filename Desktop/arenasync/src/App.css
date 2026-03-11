@@ -84,14 +84,13 @@ background:linear-gradient(to bottom, rgb(64, 48, 231) ,white);
 .search{
   display: flex;
   justify-content: center;
- 
- 
-
+  
 }
 .input{
   height: 40px;
   width: 300px;
   border-radius: 10px;
+  padding:0 10px;
 }
 #badge{
   width: 100px;
