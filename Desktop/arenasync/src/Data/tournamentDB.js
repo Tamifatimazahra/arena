@@ -20,6 +20,8 @@ export const tournamentData = [
       { id: "u4", name: "David Hall", status: "Confirmed", avatar: "https://i.pravatar.cc/150?u=u4" }
     ]
   },
+
+   
   {
     id: "t2",
     title: "Hoops Championship",
