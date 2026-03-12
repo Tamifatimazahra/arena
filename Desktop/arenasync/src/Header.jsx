@@ -1,4 +1,4 @@
-import { tournamentData } from "./Data/tournamentDB"
+import { tournamentData } from "./components/tournamentDB";
 import notificationimg from "./photo/NOTIFICATION.png";
 import profile from "./photo/profil.png";
 function Header() {

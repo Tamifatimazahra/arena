@@ -1,4 +1,3 @@
-
 import { data } from "react-router-dom";
 import { StatusBadge } from "./statusBadge";
 import { useState } from "react";
@@ -31,11 +30,11 @@ export function TournamentCard(props) {
             <button onClick={() => {
                 setisRegistered(!isRegistered)
                 props.setShowForm(!props.showFormm);
-
+                
             }} style={{
                 backgroundColor: isRegistered ? "red" : "green"
             }}   >{isRegistered ? "Se désinscrire" : "S'inscrire"}
-            </button>
+             </button>
         </div>
 
 

@@ -3,7 +3,6 @@
 export const tournamentData = [
   {
     id: "t1",
-    imguser:"./photo/profil.png",
     title: "Shuttle Masters League",
     sport: "Badminton",
     status: "On Going", // UtilisÃ© pour la couleur du StatusBadge (ex: success/green)
@@ -20,8 +19,6 @@ export const tournamentData = [
       { id: "u4", name: "David Hall", status: "Confirmed", avatar: "https://i.pravatar.cc/150?u=u4" }
     ]
   },
-
-   
   {
     id: "t2",
     title: "Hoops Championship",

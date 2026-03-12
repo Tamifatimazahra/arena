@@ -16,11 +16,7 @@ function RegistrationForm({showFormm}) {
     };
 
     return (
-        <div>
-         
-             
-
-
+        <div className="form" style={{display : "none"}}>
             {showFormm && (
                 <form onSubmit={handleSubmit}>
                     <input type="text"
@@ -48,4 +44,3 @@ function RegistrationForm({showFormm}) {
 }
 
 export default RegistrationForm;
-
