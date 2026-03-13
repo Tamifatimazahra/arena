@@ -7,17 +7,33 @@ import { StatusBadge } from "./components/statusBadge.jsx";
 import  {TournamentCard,Container}  from "./components/tournamentCard.jsx";
 import { tournamentData } from "./components/tournamentDB.jsx";
 import  RegistrationForm  from "./components/RegistrationForm.jsx";
-
+import ParticipantRow from "./components/participantRaw.jsx";
 
 function App() {  
 
-   const [showFormm, setShowForm ]= useState(false)
+   const [showFormm, setShowForm ]= useState(false);
+   const [participants,setparticipants]=useState([])
+    function handleAddParticipant(newParticipant){
+    setParticipants([...participants, newParticipant]);
+  }
+   
   return (
 <>
     <Header />
-  <Container  data={tournamentData} setShowForm={setShowForm} showFormm={showFormm} />
+  <Container  data={tournamentData} 
+  setShowForm={setShowForm} 
+  showFormm={showFormm} 
+  />
   {/* <RegistrationForm/> */}
-  <RegistrationForm showFormm={showFormm} />
+
+
+  <RegistrationForm 
+  showFormm={showFormm} 
+  
+setShowForm={setShowForm}
+ onAddParticipant={handleAddParticipant} />
+
+<ParticipantRow participants={participants}/>
 
  </>
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import { Form } from "react-router-dom";
 
-function RegistrationForm({showFormm}) {
+function RegistrationForm({showFormm, setShowForm}) {
     const [nom, setNom] = useState("");
     const [equipe, setEquipe] = useState("");
     const [niveau, setNiveau] = useState("");
@@ -10,14 +10,22 @@ function RegistrationForm({showFormm}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Nom:", nom);
-        console.log("Équipe:", equipe);
-        console.log("Niveau:", niveau);
+        if(!isNomValid)return;
+        const participant ={nom,equipe,niveau};
+        onAddParticipant(participant);
+        setNom("");
+        setEquipe("");
+        setNiveau("");
+        setShowForm(false);
     };
 
     return (
-        <div className="form" style={{display : "none"}}>
-            {showFormm && (
+        <>
+          {showFormm && (
+             <div className="parent">
+        
+             <div className="form" >
+          
                 <form onSubmit={handleSubmit}>
                     <input type="text"
                         value={nom}
@@ -37,9 +45,18 @@ function RegistrationForm({showFormm}) {
                     <button type="submit" disabled={!isNomValid}>
                         Valider
                     </button>
+
+                    <button type="button" onClick={() =>setShowForm(false)}>
+                        Anuller
+                    </button>
                 </form>
-            )}
+          
         </div>
+     </div>
+          )}
+        
+        </>
+
     );
 }
 

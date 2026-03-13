@@ -18,7 +18,7 @@ export function TournamentCard(props) {
     }
 
     return (
-        <div className="card">
+        <div className="card" >
 
             <h2 id="title">{props.data.title}</h2>
             <p id="des"> {props.data.description}</p>
@@ -30,7 +30,7 @@ export function TournamentCard(props) {
             <button onClick={() => {
                 setisRegistered(!isRegistered)
                 props.setShowForm(!props.showFormm);
-                
+
             }} style={{
                 backgroundColor: isRegistered ? "red" : "green"
             }}   >{isRegistered ? "Se désinscrire" : "S'inscrire"}

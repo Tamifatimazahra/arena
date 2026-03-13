@@ -1,17 +1,20 @@
-function ParticipantsList(props) {
-
+function ParticipantRow({ participants }) {
   return (
-    <div>
+    <div className="participants-list">
       <h3>Liste des participants</h3>
-
-      {props.participants.map((participant, index) => (
-        <p key={index}>
-          {participant.nom} - {participant.equipe} - {participant.niveau}
-        </p>
-      ))}
-
+      {participants.length === 0 ? (
+        <p>Aucun participant pour le moment.</p>
+      ) : (
+        participants.map((p, index) => (
+          <div key={index} className="participant-row">
+            <p>Nom: {p.nom}</p>
+            <p>Équipe: {p.equipe}</p>
+            <p>Niveau: {p.niveau}</p>
+          </div>
+        ))
+      )}
     </div>
   );
 }
 
-export default ParticipantsList;
+export default ParticipantRow;
